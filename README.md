@@ -1,16 +1,24 @@
 # actionInAction
 
-A minimal GitHub repository demonstrating **scheduled GitHub Actions workflows**.
+A minimal GitHub repository demonstrating **scheduled and manually triggered GitHub Actions workflows**.
 
 ## What it does
 
-A workflow runs automatically every 5 minutes and prints the current UTC time followed by "Hello world" to the console:
+A workflow runs automatically every 5 minutes (or on demand) and prints the current UTC time followed by "Hello world" to the console:
 
 ```
 2026-04-29T17:25:00 UTC Hello world
 ```
 
 The workflow is defined in [`.github/workflows/hello-world.yml`](.github/workflows/hello-world.yml).
+
+## How to run it manually
+
+1. Open this repository on GitHub.
+2. Click the **Actions** tab.
+3. In the left sidebar, click **Hello World**.
+4. Click the **Run workflow** button (top-right of the run list), then click **Run workflow** in the dropdown.
+5. The run will appear in the list within seconds.
 
 ## How to verify the job runs
 
